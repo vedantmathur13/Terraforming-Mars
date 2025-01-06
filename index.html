@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Earth Mars</title> 
+    <link rel="icon" href="Next Earth Mars Logo Final.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="map.js" defer></script>
+</head>
+
+<body bgcolor="black">
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor-blur"></div>
+
+    <div class="section1">
+        <div class="one container">
+            <div class="header">
+              <!-- <h2><img src="Next Earth Mars Logo Final.jpg" style="max-width: 100px;" alt=""></h2> -->
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"><i class="fa-solid fa-bars"></i></span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="dropmenu">
+                        <li><a href="./" class="menu-link">Home</a></li>
+                        <li><a href="#section2" class="menu-link">Promo Video</a></li>
+                        <li><a href="#section3" class="menu-link">About Us</a></li>
+                        <li><a href="#section4" class="menu-link">Marine Life Tracker</a></li>
+                        <li><a href="#surge">Tidal Surge</a></li>
+                        <li><a href="#lens">Tidal Lens</a></li>
+                        <li><a href="#contact" class="contact-link">Contact Us(under dev)</a></li>
+                    </ul>
+                </div>
+                <!-- <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+            </div>
+
+            <div class="text-content">
+                <div class="head">
+                    <h2><img src="Next Earth Mars Logo Final.jpg" id="Logo" style="max-width: 300px;" alt=""></h2>
+                    <h1 style="color: white"><u>Next Earth Mars</u></h1>
+                    <h2><span>Terraforming Mars  </span> - <span>Making The Red Planet Habitable</span></h2>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <video src="Home page.mp4" muted autoplay loop defaultPlaybackRate="0.2" id="earthVid"></video>
+    </div>
+
+    <div class="section2" id="section2">
+        <!-- <video src="./videos/Chaar Diwaari - Thehra (Official Video) ｜ Pyaar Diwaari Arc 1 ｜ Def Jam India (online-video-cutter.com).mp4" loop autoplay id="thehra"></video> -->
+        <video src="Aqua Armor Promo Video Final.mp4" loop autoplay id="thehra"></video>
+    </div>
+
+    <div class="section3" id="section3" style="margin-top: 5%;">
+        <div class="three container">
+            <div class="left">
+                <!-- <video src="./videos/mic.webm" muted loop autoplay style="scale: 0.5;"></video> -->
+                <h3 class="team">Our Team</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="Vedant.jpg">
+                        <div class="card-content">
+                            <h3>Vedant Mathur</h3>
+                            <p>Website Designer</p>
+                            <!-- <a href="" class="btn">Read More</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Vidit.jpg">
+                        <div class="card-content">
+                            <h3>Vidit Mathur</h3>
+                            <p>Website Designer</p>
+                            <!-- <a href="" class="btn">Read More</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Vedant Krishna.jpg">
+                        <div class="card-content">
+                            <h3>Pranav Chandra</h3>
+                            <p>Presentation Designer</p>
+                            <!-- <a href="" class="btn">Read More</a> -->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Ashwin.jpg">
+                        <div class="card-content">
+                            <h3>Hiba Usmani</h3>
+                            <p>Presenter</p>
+                            <!-- <a href="" class="btn">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="right About">
+                <h3 class="animated-text">What Is Terraforming</h3>
+
+                <h1 class="animated-text">Terraforming is a scientific concept focused on transforming the environment of a planet or other celestial bodies to resemble Earth, enabling the development of an ecosystem that can support human life. This process involves evaluating the planet's current conditions and then adjusting its atmosphere, temperature, surface, and ecology to create an environment conducive to human habitation.
+                </h1>
+
+                <!-- <h1> Discover our diverse expertise,<br>
+                    each one providing a unique<br>
+                    dimension to your vision.
+                </h1> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section4" id="section4">
+        <div class="four">
+            <!-- <div class="services">
+                <h5>Design</h5>
+            </div> -->
+
+            <div class="moving-text">
+                <div class="text">
+                    <div class="first">
+                        <h1>Terraforming Mars : Making The Red Planet Habitable</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Terraforming Mars : Making The Red Planet Habitable</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Terraforming Mars : Making The Red Planet Habitable</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Terraforming Mars : Making The Red Planet Habitable</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- =========projects====== -->
+
+
+           
+        </div>
+
+    </div>
+    </div>
+
+    <div class="section5" id="contact" style=" margin-top: -20%; margin-bottom: 5%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B" style="margin-top: 10%;"> <b >Understanding Mars</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1 id="slide-in">
+                        Mars has a thin atmosphere primarily composed of carbon dioxide, with trace amounts of oxygen and nitrogen, making it challenging for humans to survive without extensive terraforming. The planet experiences extremely low average temperatures of around -60°C, with fluctuations ranging from -125°C to 20°C. Additionally, Mars has surface pressure less than 1% of Earth's, making it unable to support significant amounts of water without significant intervention. The lack of a breathable atmosphere and extreme temperature variations pose major obstacles for human habitation, and the low surface pressure and absence of liquid water make Mars a hostile environment for sustaining life. Extensive technological solutions would be required to make the planet habitable for humans.
+                    </h1>
+
+                </div><br>
+                <img src="mars_4k.jpg">
+            </div>
+            
+        </div>
+    </div>
+
+
+           
+        </div>
+    </div>
+
+    
+    <div class="section5" id="contact" style=" margin-top: 40%; margin-bottom: 10%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B" style="margin-top: 0%;"> <b>Why Mars</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        Mars is relatively close to Earth, with its distance varying between 54.6 million km and 401 million km, but on average, it is about 225 million km away. The planet is rich in resources, including water in its polar ice caps and beneath the surface, which is essential for human life. Mars also has a variety of minerals and a significant amount of CO₂. In terms of similarities to Earth, Mars has a day length of 24 hours, 37 minutes, and 22 seconds, known as a "sol," which is very close to Earth's daily cycle. It experiences four seasons, like Earth, though they last about twice as long due to Mars's longer orbit around the Sun. Mars has 38% of Earth's gravity, sufficient to maintain a stable atmosphere and mitigate long-term health issues from microgravity, though it is much lower than Earth's and higher than the Moon's, which has only 16% of Earth's gravity.
+                    </h1>
+
+                </div><br>
+                <img src="exoplanet-mars-.jpg">
+            </div>
+            
+        </div>
+    </div><br>
+    
+   
+    <img style="margin-top: 15%;" id="solution" src="Our solution.png">
+
+    <div class="section5" id="contact" style=" margin-top: 20%; margin-bottom: 10%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B"  style="margin-top: 0%;"> <b>Step 1 - Warming The planet</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        Terraforming Mars to make it more Earth-like can be achieved through the greenhouse effect, where the release of CO₂ traps heat and warms the planet. Mars has a thin atmosphere primarily composed of CO₂, but not enough to create a significant greenhouse effect. To increase the atmospheric density and pressure, additional CO₂ can be released from its polar ice caps, which contain substantial amounts of CO₂ in solid form. This can be done through artificial methods or natural events like asteroid impacts. By raising the CO₂ concentration, the greenhouse effect would be amplified, gradually warming the planet and creating more Earth-like conditions with a thicker atmosphere and moderate temperatures, potentially allowing for life to thrive.
+                    </h1>
+
+                </div><br>
+                <img src="green house effect.gif">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section5" id="contact" style=" margin-top: 52%; margin-bottom: 10%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B" style="margin-top: 0%;"> <b>Step 2 - Adding nitrogen</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        Nitrogen is a crucial component for a breathable atmosphere, as it helps reduce the reactivity of oxygen and stabilizes the atmosphere. It also increases atmospheric pressure, which is essential for sustaining liquid water on a planet's surface and maintaining Earth-like conditions. Mars contains some nitrogen, primarily in the form of nitrogen compounds in its soil and ice. If Mars lacks sufficient nitrogen, it could be imported through nitrogen-rich asteroids or ammonia, which are abundant sources of nitrogen. Additionally, nitrogen could be extracted from Mars' soil or ice to further enhance the atmosphere and support a more Earth-like environment.
+                    </h1>
+
+                </div><br>
+                <img src="nitrogen.png">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section5" id="contact" style=" margin-top: 20%; margin-bottom: -20%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3  id="B" style="margin-top: 0%;"> <b>Step 3 - Introducing Liquid Water</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        Water is a fundamental prerequisite for life, crucial for hydration, agricultural production, and ecosystem maintenance. While Mars contains water in the form of ice in its polar ice caps and underground layers, the planet's low temperatures and atmospheric pressure prevent the existence of liquid water on its surface. To address this, several approaches could be employed. Melting the polar ice caps by introducing greenhouse gases or deploying orbital mirrors to raise the planet’s temperature could release water in liquid form, leading to the formation of rivers, lakes, and oceans, making Mars more Earth-like and potentially capable of sustaining life. Additionally, drilling into the Martian crust to access subsurface ice could convert this ice into liquid water. Another option is importing water by redirecting water-rich comets or icy asteroids to collide with Mars, thereby introducing substantial quantities of water to the planet’s surface.
+                    </h1>
+
+                </div>
+              
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section5" id="contact" style=" margin-top: 52%; margin-bottom: 20%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B" style="margin-top: 0%;"> <b>Step 4 - Creating a magnetic feild</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        A magnetic field is crucial for Mars' atmosphere and potential habitability. Without a strong magnetic field, Mars' atmosphere is gradually stripped away by solar wind, preventing long-term atmospheric stability necessary for terraforming. Additionally, a magnetic field shields life from harmful solar radiation and cosmic rays, which could otherwise be fatal to humans and animals. To create a magnetic field on Mars, one approach is to deploy an artificial magnetosphere, such as a large magnetic shield placed at the L1 point between Mars and the Sun, which would deflect solar wind. Alternatively, electromagnetic systems could be used, such as placing magnetic field generators or electrical conductors either on the surface or beneath the Martian ground to generate a protective magnetic field.
+                    </h1>
+
+                </div><br>
+                <img src="magnetic mars.jpg">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section5" id="contact" style="margin-top: 0%; margin-bottom: -5%;">
+        <div class="five container">
+
+            <div class="right">
+
+
+                <h3 id="B" style="margin-top: 10%;"> <b>Contact us</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        We value your thoughts and are always here to assist with any questions, feedback, or needs you
+                        may have. If you'd like to connect with a marine researcher, simply use the form below. We'll
+                        ensure your inquiry is directed to the right expert in marine exploration.
+                    </h1>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section7" id="section7">
+        <div class="seven">
+            <h4><span style="font-weight: bolder; color: #000;">&copy; 2024 Next Earth Mars. All rights reserved.</span></h4>
+
+            <div class="follow">
+                <div class="box">
+
+                    <h1>Instagram</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                            <h3>* Instagram * <span>@Next Earth Mars</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>Facebook</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                            <h3>* Facebook * <span>@Next Earth Mars</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>X/Twitter</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                            <h3>* X/Twitter * <span>@Next Earth Mars</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>Discord</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                            <h3>* Discord * <span>@Next Earth Mars</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+               
+                  
+
+               
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // import Shery from "sheryjs"; /*Don't use if using CDN*/
+        // Shery.imageEffect(".sideimg", {
+        //     style: 1 /*OR 5 for different variant */,
+        //     debug: true,
+        // });
+    </script>
+    <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
